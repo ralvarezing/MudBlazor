@@ -6,7 +6,7 @@
         @InputContent
         @if (!string.IsNullOrEmpty(Label))
         {
-            <MudInputLabel Class="mud-input-label-inputcontrol" Variant="@Variant" Disabled=@Disabled Error="@Error"
+            <MudInputLabel Class="@LabelClassName" Style="@LabelStyle" Variant="@Variant" Disabled=@Disabled Error="@Error"
                            Margin="@Margin" ForId="@ForId">
                 @Label
             </MudInputLabel>

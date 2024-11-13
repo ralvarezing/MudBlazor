@@ -271,6 +271,34 @@ namespace MudBlazor
         public string? Label { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public Typo LabelTypo { get; set; } = Typo.h6;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public string LabelClass { get; set; } = string.Empty;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public string LabelStyle { get; set; } = string.Empty;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public Color LabelColor { get; set; } = Color.Default;
+
+        /// <summary>
         /// Automatically receives focus.
         /// </summary>
         /// <remarks>

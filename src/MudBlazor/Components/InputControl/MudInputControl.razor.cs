@@ -32,6 +32,11 @@ namespace MudBlazor
                 .AddClass("mud-input-error", Error)
                 .Build();
 
+        protected string LabelClassName =>
+            new CssBuilder("mud-input-label-inputcontrol")
+                .AddClass(LabelClass)
+                .Build();
+
         /// <summary>
         /// The content within this component.
         /// </summary>
@@ -136,6 +141,27 @@ namespace MudBlazor
         /// </remarks>
         [Parameter]
         public string? Label { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public Typo LabelTypo { get; set; } = Typo.h6;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public string LabelClass { get; set; } = string.Empty;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [Parameter]
+        [Category(CategoryTypes.FormComponent.Appearance)]
+        public string LabelStyle { get; set; } = string.Empty;
 
         /// <summary>
         /// The display variant for this input.
